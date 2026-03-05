@@ -7,7 +7,7 @@ const premiumTruckImage = "https://truckcdn.cardekho.com/in/tata/intra-v50/tata-
 
 const Hero1_Premium = () => {
   return (
-    <section className="relative min-h-screen pt-10 pb-20 md:pt-22 md:pb-24 bg-white dark:bg-gray-950 transition-colors duration-500 overflow-hidden">
+    <section className="relative min-h-screen pt-18 pb-20 md:pt-22 md:pb-24 bg-white dark:bg-gray-950 transition-colors duration-500 overflow-hidden">
       
       {/* Dynamic Background Mesh Gradients */}
       <div className="absolute inset-0 opacity-40 dark:opacity-20 pointer-events-none">
