@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* 1. Tell Tailwind v4 to use the 'class' strategy for Dark Mode instead of system preference */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 2. Define our custom animations using v4's @theme block */
+@theme {
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+  --animate-fade-in-down: fade-in-down 0.8s ease-out forwards;
+  --animate-slide-in-right: slide-in-right 1s ease-out forwards;
+  --animate-slide-in-left: slide-in-left 1s ease-out forwards;
+  --animate-reveal: fadeInReveal 1s ease-out forwards;
+
+  @keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-down {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slide-in-right {
+    0% { opacity: 0; transform: translateX(-40px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes slide-in-left {
+    0% { opacity: 0; transform: translateX(40px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes fadeInReveal {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+}
